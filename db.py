@@ -1,11 +1,18 @@
+import os
 import psycopg2
 
 def get_connection():
+    # 1) If DATABASE_URL is set (Render / other host), use it
+    db_url = os.environ.get("DATABASE_URL")
+    if db_url:
+        return psycopg2.connect(db_url)
+
+    # 2) Otherwise use your local Postgres for development
     return psycopg2.connect(
         host="localhost",
-        database="realestate",   # name of your DB
-        user="postgres",         # your Postgres username
-        password="neha1610"  # your Postgres password
+        database="realestate",
+        user="postgres",        # change if your local user is different
+        password="yourpassword" # change to your local password
     )
 
 def run_query(sql, params=(), fetch=False):
