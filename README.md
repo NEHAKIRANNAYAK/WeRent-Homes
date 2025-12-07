@@ -1,5 +1,14 @@
 WeRent Homes – Real Estate Management System
 
+[![Live Deployment](https://img.shields.io/badge/Render-Deployed-brightgreen)](https://werent-homes-app.onrender.com)
+
+## Live Application
+The WeRent Homes system is deployed and available at the link below:
+
+https://werent-homes-app.onrender.com
+
+This live deployment connects to a hosted PostgreSQL instance and demonstrates the full feature set of the project, including property search, bookings, payment management, reward tracking, and agent property administration.
+
 Introduction
 
 WeRent Homes is a relational database–driven web application that supports the operations of a real estate rental platform. The system enables renters to search and book properties, manage payment methods, and track rewards, while agents can list properties and review booking activities. The project demonstrates database modeling, normalization, SQL implementation, and full-stack application development using Flask and PostgreSQL.
@@ -44,3 +53,6 @@ http://127.0.0.1:5000/
 Summary
 
 WeRent Homes integrates database normalization principles with web-based data processing to deliver an end-to-end real estate management solution. Each operation within the application corresponds to executable SQL queries, ensuring consistency, correctness, and traceability between the interface and the underlying relational schema.
+
+
+
