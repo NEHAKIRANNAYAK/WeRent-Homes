@@ -1,13 +1,3 @@
--- =====================================================================
--- File: real_estate_phase2_fixed.sql
--- CS425 FINAL PROJECT - REAL ESTATE
--- Phase 2: FIXED relational schema + sample data (PostgreSQL)
--- Normalization fixes:
---   - surrogate keys (user_id, renter_id, agent_id, etc.)
---   - separate ADDRESS table (no repeated address columns)
---   - CARD_DETAILS.Card_no as VARCHAR
---   - PROPERTY_TYPE replaced by PROPERTY_CATEGORY + PROPERTY_DETAILS (3NF)
--- =====================================================================
 
 -- Drop tables in dependency order
 DROP TABLE IF EXISTS REWARD CASCADE;
@@ -848,4 +838,5 @@ WHERE u.Email = 'divya.krishnan@email.com';
 
 -- =====================================================================
 -- END OF SCRIPT
+
 -- =====================================================================
